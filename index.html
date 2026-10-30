@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonvi Assis Noronha | Machine Learning Engineer</title>
+  <meta name="description" content="Sonvi Assis Noronha is a machine learning engineer working on computer vision and deep learning. IEEE-published author of SI-FF-ArcNet, an identical-twin face recognition model.">
+  <meta name="theme-color" content="#080f20">
+
+  <!-- Open Graph / LinkedIn preview.
+       After deploying, replace https://YOUR-SITE.vercel.app with your real site address (see README). -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sonvi Assis Noronha | Machine Learning Engineer">
+  <meta property="og:description" content="Computer vision and deep learning. IEEE-published face recognition research, deployed on edge devices.">
+  <meta property="og:url" content="https://YOUR-SITE.vercel.app/">
+  <meta property="og:image" content="https://YOUR-SITE.vercel.app/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="preload" as="image" href="assets/sonvi-portrait.webp" type="image/webp">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    document.documentElement.classList.add('js');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('reduced');
+    }
+  </script>
+  <noscript><style>.js .hero-hide{visibility:visible!important}</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav__brand" href="#top" aria-label="Sonvi Assis Noronha, back to top">Sonvi Assis Noronha</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Skills</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="hero__role hero-hide">Machine learning engineer, computer vision</p>
+          <h1 class="hero__name" aria-label="Sonvi Assis Noronha">
+            <span class="line"><span class="hero-hide">Sonvi</span></span>
+            <span class="line"><span class="hero-hide">Assis</span></span>
+            <span class="line"><span class="hero-hide">Noronha</span></span>
+          </h1>
+          <p class="hero__lede hero-hide">I teach models to tell faces apart, even identical twins, and I get them running on small devices.</p>
+          <div class="hero__cta hero-hide">
+            <a class="btn btn--primary" href="#work">See my work</a>
+            <a class="btn" href="assets/Sonvi_Assis_Noronha_Resume.pdf" download>Download résumé</a>
+          </div>
+        </div>
+
+        <figure class="portrait hero-hide">
+          <div class="portrait__frame">
+            <div class="portrait__zoom">
+              <picture>
+                <source type="image/webp" srcset="assets/sonvi-portrait.webp">
+                <img src="assets/sonvi-portrait.jpg" width="1932" height="2576" alt="Sonvi Assis Noronha smiling, wearing a navy shirt" fetchpriority="high" decoding="async">
+              </picture>
+
+              <!-- Face detection overlay: coordinates match the portrait (3:4) -->
+              <svg class="detect" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true">
+                <g class="detect__box" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path class="d-corner" pathLength="1" d="M98 80 V66 H112"/>
+                  <path class="d-corner" pathLength="1" d="M144 66 H158 V80"/>
+                  <path class="d-corner" pathLength="1" d="M158 138 V152 H144"/>
+                  <path class="d-corner" pathLength="1" d="M112 152 H98 V138"/>
+                </g>
+                <g class="detect__mesh" fill="none">
+                  <path class="d-line" pathLength="1" d="M118.5 110 L140 108.4 L129.3 124.8 L118.5 110"/>
+                  <path class="d-line" pathLength="1" d="M117.6 127.6 L129.3 124.8 L146.4 126.4"/>
+                  <path class="d-line" pathLength="1" d="M118.5 110 L117.6 127.6 M140 108.4 L146.4 126.4"/>
+                </g>
+                <g class="detect__points">
+                  <circle class="d-dot" cx="118.5" cy="110" r="2.2"/>
+                  <circle class="d-dot" cx="140" cy="108.4" r="2.2"/>
+                  <circle class="d-dot" cx="129.3" cy="124.8" r="2.2"/>
+                  <circle class="d-dot" cx="117.6" cy="127.6" r="2.2"/>
+                  <circle class="d-dot" cx="146.4" cy="126.4" r="2.2"/>
+                </g>
+              </svg>
+              <span class="detect__label">512-D embedding</span>
+            </div>
+            <span class="scan" aria-hidden="true"></span>
+          </div>
+        </figure>
+      </div>
+
+      <p class="hero__scroll hero-hide" aria-hidden="true">Scroll</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="wrap">
+        <h2 class="visually-hidden">About</h2>
+        <p class="about__statement reveal-words">I build computer vision systems that separate faces a person can barely tell apart, then shrink them until they run in real time on a board the size of a sandwich. My research on identical twins is published with IEEE.</p>
+
+        <dl class="facts">
+          <div class="facts__item">
+            <dt>Education</dt>
+            <dd>B.E. in Artificial Intelligence and Machine Learning, HKBK College of Engineering, Bengaluru (2022 to 2026)</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Research</dt>
+            <dd>IEEE-published hybrid CNN–Transformer architecture for biometric recognition</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Deployment</dt>
+            <dd>Edge inference on NVIDIA Jetson Nano, and an Android AI internship at Mind Matrix Pvt. Ltd.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- WORK: horizontal scroll while the section is pinned -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work__pin">
+        <div class="work__track">
+          <div class="work__intro">
+            <h2 id="work-title">Selected work</h2>
+            <p>Three projects, from a published research model to a pose reader running on a small board. Keep scrolling.</p>
+          </div>
+
+          <article class="card card--lead">
+            <p class="card__meta">IEEE published, 2025</p>
+            <h3>SI-FF-ArcNet: identical twin face recognition</h3>
+            <p class="card__text">A hybrid of Swin Transformer and InceptionV4 that fuses features at several scales and trains with ArcFace loss to produce 512-D face embeddings. Recognition is open-set: cosine similarity decides whether a face matches anyone the model knows.</p>
+            <ul class="metrics">
+              <li><strong data-count="99.96" data-decimals="2" data-suffix="%">99.96%</strong><span>validation accuracy</span></li>
+              <li><strong data-count="98.20" data-decimals="2" data-suffix="%">98.20%</strong><span>F1-score over 50 epochs</span></li>
+              <li><strong data-count="512" data-suffix="-D">512-D</strong><span>ArcFace embedding</span></li>
+              <li><strong data-count="5" data-suffix="-fold">5-fold</strong><span>cross-validation</span></li>
+            </ul>
+            <p class="card__stack">Python, PyTorch, Swin Transformer, InceptionV4, ArcFace loss, OpenCV</p>
+          </article>
+
+          <article class="card">
+            <p class="card__meta">August 2025</p>
+            <h3>Real-time semaphore detection</h3>
+            <p class="card__text">Reads semaphore signals from body pose in a live camera feed. MediaPipe finds the pose, Flask serves the result, and the whole pipeline runs on an NVIDIA Jetson Nano so inference stays on the device.</p>
+            <p class="card__stack">Python, OpenCV, MediaPipe, Flask, Jetson Nano</p>
+          </article>
+
+          <article class="card">
+            <p class="card__meta">December 2024</p>
+            <h3>Movie recommendation system</h3>
+            <p class="card__text">A content-based recommender. Movie descriptions become TF-IDF vectors, and cosine similarity ranks the closest matches.</p>
+            <ul class="metrics metrics--single">
+              <li><strong data-count="85" data-suffix="%">85%</strong><span>recommendation accuracy</span></li>
+            </ul>
+            <p class="card__stack">Python, Pandas, Scikit-learn</p>
+          </article>
+
+          <div class="work__outro">
+            <a class="btn btn--primary" href="https://github.com/sonusonvi7" target="_blank" rel="noopener">More on GitHub</a>
+          </div>
+        </div>
+        <div class="work__bar" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="stack" id="stack">
+      <div class="wrap">
+        <h2>What I work with</h2>
+        <div class="stack__list">
+          <div class="stack__row">
+            <h3>Deep learning</h3>
+            <p>PyTorch, TensorFlow, CNNs, Transformers, ArcFace, model optimisation</p>
+          </div>
+          <div class="stack__row">
+            <h3>Computer vision</h3>
+            <p>OpenCV, MediaPipe, image processing</p>
+          </div>
+          <div class="stack__row">
+            <h3>Generative AI</h3>
+            <p>RAG pipelines, embeddings, prompt engineering</p>
+          </div>
+          <div class="stack__row">
+            <h3>Languages</h3>
+            <p>Python, SQL, Kotlin, Julia, with basics in R, Java and C</p>
+          </div>
+          <div class="stack__row">
+            <h3>Data and apps</h3>
+            <p>Pandas, NumPy, Power BI, Flask, Firebase</p>
+          </div>
+          <div class="stack__row">
+            <h3>Methods</h3>
+            <p>Cross-validation, feature fusion, open-set recognition, hyperparameter tuning</p>
+          </div>
+          <div class="stack__row">
+            <h3>Tools</h3>
+            <p>Git, GitHub, Jupyter, Google Colab, VS Code, NVIDIA Jetson Nano</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING -->
+    <section class="learning" id="learning">
+      <div class="wrap learning__grid">
+        <div>
+          <h2>Learning</h2>
+          <p class="learning__degree">B.E. in Artificial Intelligence and Machine Learning</p>
+          <p class="learning__place">HKBK College of Engineering, Bengaluru<br>2022 to 2026</p>
+        </div>
+        <ul class="certs">
+          <li><span>2025</span> NPTEL (Elite), Artificial Intelligence in Industrial Engineering</li>
+          <li><span>2025</span> NPTEL, Cloud Computing and Distributed Systems</li>
+          <li><span>2024</span> Generative AI and LLM course: RAG, embeddings, prompt engineering</li>
+          <li><span>2024</span> Infosys Springboard, MongoDB Developer</li>
+          <li><span>2024</span> Great Learning, Data Visualization with Power BI</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__text">
+          <h2>Let’s build something that sees.</h2>
+          <p>Open to machine learning and computer vision roles, research collaborations, and edge AI projects.</p>
+          <a class="contact__mail" href="mailto:sonusonvi7@gmail.com">sonusonvi7@gmail.com</a>
+          <div class="contact__links">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/sonvi-assis-noronha-1482a8439" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/sonusonvi7" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="assets/Sonvi_Assis_Noronha_Resume.pdf" download>Résumé (PDF)</a>
+          </div>
+        </div>
+        <figure class="contact__photo">
+          <picture>
+            <source type="image/webp" srcset="assets/sonvi-square.webp">
+            <img src="assets/sonvi-square.jpg" width="1240" height="1236" alt="Close-up portrait of Sonvi Assis Noronha" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Sonvi Assis Noronha</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
